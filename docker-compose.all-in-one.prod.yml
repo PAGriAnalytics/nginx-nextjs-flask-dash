@@ -1,0 +1,8 @@
+services:
+  magic-portfolio-all-in-one:
+    build:
+      context: .
+      dockerfile: Dockerfile.all-in-one.prod
+    ports:
+      - "80:80"
+      - "443:443"

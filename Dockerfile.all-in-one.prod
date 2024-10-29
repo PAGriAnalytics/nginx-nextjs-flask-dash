@@ -1,0 +1,44 @@
+# Этап сборки Next.js
+FROM node:18-alpine AS builder
+
+# Устанавливаем рабочую директорию
+WORKDIR /nextjs
+
+# Копируем файл зависимостей и устанавливаем их
+COPY nextjs/package*.json ./
+
+# RUN npm ci --only=production --no-cache
+# RUN npm install --only=production --no-cache
+RUN npm install --no-cache
+
+# Копируем остальные файлы проекта и собираем
+COPY nextjs/. .
+
+RUN npm run build
+# Этап сборки Flask
+FROM python:3.12-alpine AS final
+
+# Устанавливаем рабочую директорию для Flask
+WORKDIR /flask
+
+# Копируем файл зависимостей и устанавливаем их
+COPY flask/requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Копируем приложение Flask
+COPY flask/. .
+
+# Устанавливаем необходимые пакеты, включая Node.js и npm
+RUN apk add --no-cache nginx supervisor nodejs npm
+
+# Копируем собранный проект и приложение Flask
+COPY --from=builder /nextjs /nextjs
+
+# Копируем конфигурацию supervisord и Nginx
+COPY supervisord.all-in-one.prod.conf /etc/supervisord.conf
+COPY nginx/nginx.all-in-one.conf /etc/nginx/nginx.conf
+# Открываем порты
+EXPOSE 3000 5000 80 443
+
+# Запускаем supervisord
+CMD ["supervisord", "-c", "/etc/supervisord.conf"]

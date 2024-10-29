@@ -1,0 +1,37 @@
+services:
+  magic-portfolio-flask:
+    build:
+      context: ./flask  # Укажите путь к вашему приложению Flask (это будет также имя контейнера, которое можно использвоать вместо ip контейнера)
+      dockerfile: Dockerfile
+    restart: unless-stopped  # Автоматический перезапуск контейнера      
+    environment:
+      - FLASK_ENV=development  # Установите переменные окружения, если необходимо
+    ports:
+      - "3000:3000"  # Открываем порт 80 для доступа извне
+    volumes:
+      - ./flask:/flask
+
+  magic-portfolio-nextjs:
+    build:
+      context: ./nextjs  
+      dockerfile: Dockerfile.dev
+    restart: unless-stopped  # Автоматический перезапуск контейнера      
+    environment:
+      - NODE_ENV=development  # Установите переменные окружения, если необходимо
+    ports:
+      - "5000:5000"  # Открываем порт 80 для доступа извне
+    volumes:
+      - ./nextjs/messages:/nextjs/messages
+      - ./nextjs/public:/nextjs/public
+      - ./nextjs/src:/nextjs/src
+
+  magic-portfolio-nginx:
+    build:
+      context: ./nginx  # Укажите путь к вашему каталогу Nginx  (это будет также имя контейнера, которое можно использвоать вместо ip контейнера)
+      dockerfile: Dockerfile    
+    restart: unless-stopped  # Автоматический перезапуск контейнера      
+    ports:
+      - "80:80"  # Открываем порт 80 для доступа извне
+    depends_on:
+      - magic-portfolio-flask
+      - magic-portfolio-nextjs

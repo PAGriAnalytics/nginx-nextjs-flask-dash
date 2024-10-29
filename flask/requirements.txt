@@ -1,0 +1,6 @@
+dash==2.14.2
+Flask==3.0.3
+pandas==2.2.3
+plotly==5.24.1
+gunicorn==22.0.0
+flask-cors

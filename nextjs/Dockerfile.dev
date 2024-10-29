@@ -1,0 +1,24 @@
+# Этап сборки Next.js
+FROM node:18-alpine AS builder
+
+# Устанавливаем рабочую директорию
+WORKDIR /nextjs
+
+# Устанавливаем переменную окружения для режима разработки
+ENV NODE_ENV=development
+
+# Копируем остальные файлы проекта и собираем
+COPY . .
+
+# RUN npm ci --only=production --no-cache
+# RUN npm install --only=production --no-cache
+RUN npm install --no-cache
+
+# Открываем порты
+EXPOSE 3000 
+
+CMD ["sh", "-c", "npm run dev"]
+
+
+
+

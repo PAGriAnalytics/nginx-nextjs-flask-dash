@@ -1,0 +1,122 @@
+2024-10-28 02:49:45,345 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-10-28 02:49:45,351 INFO supervisord started with pid 1
+2024-10-28 02:49:46,356 INFO spawned: 'flask' with pid 7
+2024-10-28 02:49:46,370 INFO spawned: 'nextjs' with pid 8
+2024-10-28 02:49:46,383 INFO spawned: 'nginx' with pid 9
+2024-10-28 02:49:47,564 INFO success: flask entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-28 02:49:47,568 INFO success: nextjs entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-28 02:49:47,569 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-28 02:49:48,621 WARN exited: nextjs (exit status 127; not expected)
+2024-10-28 02:49:49,627 INFO spawned: 'nextjs' with pid 25
+2024-10-28 02:49:50,244 WARN exited: nextjs (exit status 127; not expected)
+2024-10-28 02:49:51,250 INFO spawned: 'nextjs' with pid 37
+2024-10-28 02:49:51,832 WARN exited: nextjs (exit status 127; not expected)
+2024-10-28 02:49:53,839 INFO spawned: 'nextjs' with pid 49
+2024-10-28 02:49:54,398 WARN exited: nextjs (exit status 127; not expected)
+2024-10-28 02:49:57,407 INFO spawned: 'nextjs' with pid 61
+2024-10-28 02:49:57,967 WARN exited: nextjs (exit status 127; not expected)
+2024-10-28 02:49:58,969 INFO gave up: nextjs entered FATAL state, too many start retries too quickly
+2024-10-28 03:19:01,117 WARN received SIGTERM indicating exit request
+2024-10-28 03:19:01,117 INFO waiting for flask, nginx to die
+2024-10-28 03:19:02,156 INFO stopped: nginx (exit status 0)
+2024-10-28 03:19:04,627 INFO stopped: flask (exit status 0)
+2024-10-28 03:19:25,690 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-10-28 03:19:25,697 INFO supervisord started with pid 1
+2024-10-28 03:19:26,702 INFO spawned: 'flask' with pid 7
+2024-10-28 03:19:26,715 INFO spawned: 'nextjs' with pid 8
+2024-10-28 03:19:26,735 INFO spawned: 'nginx' with pid 9
+2024-10-28 03:19:27,635 WARN exited: nextjs (exit status 127; not expected)
+2024-10-28 03:19:28,637 INFO success: flask entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-28 03:19:28,644 INFO spawned: 'nextjs' with pid 25
+2024-10-28 03:19:28,646 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-28 03:19:30,472 INFO success: nextjs entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-28 03:19:30,473 WARN exited: nextjs (exit status 127; not expected)
+2024-10-28 03:19:31,480 INFO spawned: 'nextjs' with pid 37
+2024-10-28 03:19:32,043 WARN exited: nextjs (exit status 127; not expected)
+2024-10-28 03:19:33,048 INFO spawned: 'nextjs' with pid 49
+2024-10-28 03:19:33,633 WARN exited: nextjs (exit status 127; not expected)
+2024-10-28 03:19:35,640 INFO spawned: 'nextjs' with pid 61
+2024-10-28 03:19:36,212 WARN exited: nextjs (exit status 127; not expected)
+2024-10-28 03:19:39,221 INFO spawned: 'nextjs' with pid 73
+2024-10-28 03:19:39,780 WARN exited: nextjs (exit status 127; not expected)
+2024-10-28 03:19:40,782 INFO gave up: nextjs entered FATAL state, too many start retries too quickly
+2024-10-28 03:30:42,610 WARN received SIGTERM indicating exit request
+2024-10-28 03:30:42,611 INFO waiting for flask, nginx to die
+2024-10-28 03:30:42,645 INFO stopped: nginx (exit status 0)
+2024-10-28 03:30:45,124 INFO stopped: flask (exit status 0)
+2024-10-28 03:39:13,112 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-10-28 03:39:13,118 INFO supervisord started with pid 1
+2024-10-28 03:39:14,124 INFO spawned: 'flask' with pid 6
+2024-10-28 03:39:14,148 INFO spawned: 'nextjs' with pid 7
+2024-10-28 03:39:14,162 INFO spawned: 'nginx' with pid 8
+2024-10-28 03:39:15,611 INFO success: flask entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-28 03:39:15,612 INFO success: nextjs entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-28 03:39:15,612 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-28 03:44:04,437 WARN received SIGTERM indicating exit request
+2024-10-28 03:44:04,437 INFO waiting for flask, nextjs, nginx to die
+2024-10-28 03:44:05,478 INFO stopped: nginx (exit status 0)
+2024-10-28 03:44:05,553 INFO stopped: nextjs (exit status 0)
+2024-10-28 03:44:06,122 INFO stopped: flask (exit status 0)
+2024-10-28 04:30:58,610 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-10-28 04:30:58,620 INFO supervisord started with pid 1
+2024-10-28 04:30:59,624 INFO spawned: 'flask' with pid 8
+2024-10-28 04:30:59,638 INFO spawned: 'nextjs' with pid 9
+2024-10-28 04:30:59,664 INFO spawned: 'nginx' with pid 10
+2024-10-28 04:31:00,994 INFO success: flask entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-28 04:31:00,996 INFO success: nextjs entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-28 04:31:00,998 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-28 04:37:55,697 INFO exited: nextjs (exit status 0; expected)
+2024-10-28 04:37:56,718 INFO spawned: 'nextjs' with pid 68
+2024-10-28 04:37:57,724 INFO success: nextjs entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-28 04:39:03,063 WARN received SIGTERM indicating exit request
+2024-10-28 04:39:03,067 INFO waiting for flask, nextjs, nginx to die
+2024-10-28 04:39:03,121 INFO stopped: nginx (exit status 0)
+2024-10-28 04:39:03,338 INFO stopped: nextjs (exit status 0)
+2024-10-28 04:39:04,478 INFO stopped: flask (exit status 0)
+2024-10-28 04:53:45,768 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-10-28 04:53:45,778 INFO supervisord started with pid 1
+2024-10-28 04:53:46,784 INFO spawned: 'flask' with pid 7
+2024-10-28 04:53:46,796 INFO spawned: 'nextjs' with pid 8
+2024-10-28 04:53:46,807 INFO spawned: 'nginx' with pid 9
+2024-10-28 04:53:48,740 INFO success: flask entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-28 04:53:48,741 INFO success: nextjs entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-28 04:53:48,741 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-28 04:59:06,129 WARN received SIGTERM indicating exit request
+2024-10-28 04:59:06,140 INFO waiting for flask, nextjs, nginx to die
+2024-10-28 04:59:06,216 INFO stopped: nginx (exit status 0)
+2024-10-28 04:59:06,764 INFO stopped: nextjs (exit status 0)
+2024-10-28 04:59:09,047 INFO stopped: flask (exit status 0)
+2024-10-28 05:07:11,292 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-10-28 05:07:11,299 INFO supervisord started with pid 1
+2024-10-28 05:07:12,304 INFO spawned: 'flask' with pid 6
+2024-10-28 05:07:12,316 INFO spawned: 'nextjs' with pid 7
+2024-10-28 05:07:12,328 INFO spawned: 'nginx' with pid 8
+2024-10-28 05:07:14,186 INFO success: flask entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-28 05:07:14,186 INFO success: nextjs entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-28 05:07:14,191 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-28 05:20:33,918 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-10-28 05:20:33,924 INFO supervisord started with pid 1
+2024-10-28 05:20:34,929 INFO spawned: 'flask' with pid 7
+2024-10-28 05:20:34,941 INFO spawned: 'nextjs' with pid 8
+2024-10-28 05:20:34,948 INFO spawned: 'nginx' with pid 9
+2024-10-28 05:20:36,726 INFO success: flask entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-28 05:20:36,728 INFO success: nextjs entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-28 05:20:36,733 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-28 05:27:17,520 WARN received SIGTERM indicating exit request
+2024-10-28 05:27:17,522 INFO waiting for flask, nextjs, nginx to die
+2024-10-28 05:27:17,576 INFO stopped: nginx (exit status 0)
+2024-10-28 05:27:18,012 INFO stopped: nextjs (exit status 0)
+2024-10-28 05:27:20,181 INFO stopped: flask (exit status 0)
+2024-10-28 05:52:46,761 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-10-28 05:52:46,770 INFO supervisord started with pid 1
+2024-10-28 05:52:47,775 INFO spawned: 'flask' with pid 7
+2024-10-28 05:52:47,786 INFO spawned: 'nextjs' with pid 8
+2024-10-28 05:52:47,801 INFO spawned: 'nginx' with pid 9
+2024-10-28 05:52:49,548 INFO success: flask entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-28 05:52:49,549 INFO success: nextjs entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-28 05:52:49,549 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-28 05:57:56,513 WARN received SIGTERM indicating exit request
+2024-10-28 05:57:56,514 INFO waiting for flask, nextjs, nginx to die
+2024-10-28 05:57:56,563 INFO stopped: nginx (exit status 0)
+2024-10-28 05:57:57,075 INFO stopped: nextjs (exit status 0)
+2024-10-28 05:57:58,261 INFO stopped: flask (exit status 0)

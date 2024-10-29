@@ -1,0 +1,17 @@
+{
+    "name": "magic-portfolio",
+    "dockerComposeFile": ["../docker-compose.yml", "docker-compose.yml"],
+    "service": "app",
+    "workspaceFolder": "/app",
+    // "remoteUser": "app",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance"
+            ]
+        }
+    },
+    // "workspaceMount": "source=${localWorkspaceFolder}/flask_app,target=/flask_mount,type=bind,consistency=cached"
+    // "forwardPorts": [5000]
+}

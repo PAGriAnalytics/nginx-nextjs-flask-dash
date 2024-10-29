@@ -1,0 +1,22 @@
+# Этап сборки Next.js
+FROM node:18-alpine AS builder
+
+# Устанавливаем рабочую директорию
+WORKDIR /nextjs
+
+# Копируем файл зависимостей и устанавливаем их
+COPY package*.json ./
+
+# RUN npm ci --only=production --no-cache
+# RUN npm install --only=production --no-cache
+RUN npm install --no-cache
+
+# Копируем остальные файлы проекта и собираем
+COPY . .
+
+RUN npm run build
+
+# Открываем порты
+EXPOSE 3000 
+
+CMD ["npm", "start"]

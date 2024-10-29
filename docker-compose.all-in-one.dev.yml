@@ -1,0 +1,15 @@
+services:
+  magic-portfolio-all-in-one:
+    build:
+      context: .
+      dockerfile: Dockerfile.all-in-one.dev
+    volumes:
+      - ./flask:/flask
+      - ./nextjs/messages:/nextjs/messages
+      - ./nextjs/public:/nextjs/public
+      - ./nextjs/src:/nextjs/src
+    ports:
+      - "80:80"
+      - "443:443"
+      - "3000:3000"
+      - "5000:5000"

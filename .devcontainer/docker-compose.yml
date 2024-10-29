@@ -1,0 +1,5 @@
+services:
+  flask_app:
+    volumes:
+      # - .:/app # чтобы папка связалась, нужно сделать build внутри vscode, если без этого не связывается
+      - ~/.ssh:/home/app/.ssh:ro
