@@ -39,3 +39,4 @@ nextjs/
 docker-compose -f docker-compose.dev.yml up --build # For development in separate containers
 docker-compose -f docker-compose.prod.yml up --build # For production in separate containers
 ```
+Open http://localhost with your browser to see the result.
