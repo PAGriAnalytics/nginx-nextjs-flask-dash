@@ -1,5 +1,5 @@
 # Next.js + Flask + Dash App with Nginx Proxy
-This repository contains a template for building a website using Next.js with a Nginx reverse proxy and a Flask API with a Dash application. You can easily create a site that includes a link to a dashboard, which will open the Dash dashboard upon clicking.
+This repository contains a template for building a website using Next.js with Nginx reverse proxy and a Flask API with a Dash application. You can easily create a site that includes a link to a dashboard, which will open the Dash dashboard upon clicking.
 
 ## Project Structure
 - The `flask` folder contains the Flask application and Dash applications. You can add your own Dash applications and connect them to Flask in `app.py`.
